@@ -1,75 +1,66 @@
 <template>
-  <v-layout column justify-center align-center>
-    <v-flex xs12 sm8 md6>
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>
-            Vuetify is a progressive Material Design component framework for
-            Vue.js. It was designed to empower developers to create amazing
-            applications.
+  <v-content>
+    <v-container>
+      <v-row justify="center">
+        <v-col cols="xl-8">
+          <v-container class="hero">
+            <v-row>
+              <v-col>
+                <h1>DIVI</h1>
+                <p>Das beliebteste WordPress-Thema der Welt und der ultimative WordPress Page Builder</p>
+              </v-col>
+              <v-col>
+                <video id="video1" class="card card-full-bleed current-item" width="600" autoplay="" loop="" muted="" playsinline="">
+                  <source data-src="https://res.cloudinary.com/j0e/video/upload/v1584557707/build_i9ixup.mp4" video-src="https://res.cloudinary.com/j0e/video/upload/v1584557707/build_i9ixup.mp4" type="video/mp4" src="https://res.cloudinary.com/j0e/video/upload/v1584557707/build_i9ixup.mp4">
+                </video>
+              </v-col>
+            </v-row>
+            <div class="my-2">
+              <v-btn x-large block color="primary">Extra large Button</v-btn>
+            </div>
+          </v-container>
+
+          <p>Geile Sache von Joe.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur ut blanditiis incidunt alias esse quia modi provident illum beatae, eaque ipsa reiciendis dolorum autem odit voluptate officiis hic sed officia!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure qui iste quaerat officiis placeat maiores, aliquid commodi temporibus recusandae facilis odit sed tempore nobis eum, soluta, necessitatibus quam neque vitae.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere facilis repellendus, ratione officiis praesentium voluptates aspernatur quae id nemo saepe vel enim illum eos ipsam earum! Omnis maiores vitae quam?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente in inventore placeat, laboriosam, eligendi eum eaque molestias unde illo non blanditiis sed totam esse exercitationem dignissimos harum. Laudantium, nam ut?
           </p>
-          <p>
-            For more information on Vuetify, check out the
-            <a href="https://vuetifyjs.com" target="_blank"> documentation </a>.
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur ut blanditiis incidunt alias esse quia modi provident illum beatae, eaque ipsa reiciendis dolorum autem odit voluptate officiis hic sed officia!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure qui iste quaerat officiis placeat maiores, aliquid commodi temporibus recusandae facilis odit sed tempore nobis eum, soluta, necessitatibus quam neque vitae.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere facilis repellendus, ratione officiis praesentium voluptates aspernatur quae id nemo saepe vel enim illum eos ipsam earum! Omnis maiores vitae quam?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente in inventore placeat, laboriosam, eligendi eum eaque molestias unde illo non blanditiis sed totam esse exercitationem dignissimos harum. Laudantium, nam ut?
           </p>
-          <p>
-            If you have questions, please join the official
-            <a href="https://chat.vuetifyjs.com/" target="_blank" title="chat">
-              discord </a
-            >.
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur ut blanditiis incidunt alias esse quia modi provident illum beatae, eaque ipsa reiciendis dolorum autem odit voluptate officiis hic sed officia!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure qui iste quaerat officiis placeat maiores, aliquid commodi temporibus recusandae facilis odit sed tempore nobis eum, soluta, necessitatibus quam neque vitae.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere facilis repellendus, ratione officiis praesentium voluptates aspernatur quae id nemo saepe vel enim illum eos ipsam earum! Omnis maiores vitae quam?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente in inventore placeat, laboriosam, eligendi eum eaque molestias unde illo non blanditiis sed totam esse exercitationem dignissimos harum. Laudantium, nam ut?
           </p>
-          <p>
-            Find a bug? Report it on the github
-            <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              title="contribute"
-            >
-              issue board </a
-            >.
-          </p>
-          <p>
-            Thank you for developing with Vuetify and I look forward to bringing
-            more exciting features in the future.
-          </p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3" />
-          <a href="https://nuxtjs.org/" target="_blank">
-            Nuxt Documentation
-          </a>
-          <br />
-          <a href="https://github.com/nuxt/nuxt.js" target="_blank">
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn color="primary" nuxt to="/inspire">
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-flex>
-  </v-layout>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-content>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
-
 export default {
-  components: {
-    Logo,
-    VuetifyLogo
-  }
+
 }
 </script>
+
+<style>
+  .hero h1 {
+    font-size: 150px;
+    font-weight: 900;
+    line-height: 1.2em;
+    margin-bottom: .2em;
+    color: #8f42ec;
+  }
+  .hero p {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1.2em;
+    margin-bottom: .2em;
+    color: #b142ec;
+  }
+</style>
