@@ -15,7 +15,7 @@
                 </video>
               </v-col>
             </v-row>
-            <ctabuttonComp />
+            <ctaButtonComp />
           </v-container>
 
           <p>Geile Sache von Joe.</p>
@@ -34,6 +34,14 @@
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere facilis repellendus, ratione officiis praesentium voluptates aspernatur quae id nemo saepe vel enim illum eos ipsam earum! Omnis maiores vitae quam?
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente in inventore placeat, laboriosam, eligendi eum eaque molestias unde illo non blanditiis sed totam esse exercitationem dignissimos harum. Laudantium, nam ut?
           </p>
+          <v-container class="heroBottom">
+            <h2 class="font-weight-medium text-center">Mehr Kunden gewinnen mit<br />DIVI</h2>
+            <v-row justify="center">
+              <v-col>
+                <ctaButtonComp />
+              </v-col>
+            </v-row>
+          </v-container>
         </v-col>
       </v-row>
     </v-container>
@@ -41,11 +49,11 @@
 </template>
 
 <script>
-import ctabuttonComp from "~/components/ctabuttonComp"
+import ctaButtonComp from "~/components/ctaButtonComp"
 
 export default {
   components: {
-    ctabuttonComp
+    ctaButtonComp
   },  
 };
 </script>
@@ -63,5 +71,9 @@ export default {
     line-height: 1.2em;
     margin-bottom: .2em;
     color: #b142ec;
+  }
+  .heroBottom {
+    margin: 120px 0;
+    font-size: 3vw;
   }
 </style>
