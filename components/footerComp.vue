@@ -41,24 +41,24 @@
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        links: [
-          { title: 'Home', href: '/' },
-          { title: 'About Us', href: '/about' },
-          { title: 'Impressum', href: 'https://j0e.org/impressum/' },
-          { title: 'Datenschutz', href: 'https://j0e.org/datenschutz/' },
-          { title: 'Kontakt', href: 'https://j0e.org/ueber-j0e-org/#kontakt' },
-        ],
-        icons: [
-          { title: 'mdi-facebook', href: 'https://www.facebook.com/j0e.org' },
-          { title: 'mdi-twitter', href: 'https://twitter.com/j0e_org' },
-          { title: 'mdi-instagram', href: 'https://www.instagram.com/j0eorg/' },
-        ],
-      }
-    },
-  }
+export default {
+  data () {
+    return {
+      links: [
+        { title: 'Home', href: '/' },
+        { title: 'About Us', href: '/about' },
+        { title: 'Impressum', href: 'https://j0e.org/impressum/' },
+        { title: 'Datenschutz', href: 'https://j0e.org/datenschutz/' },
+        { title: 'Kontakt', href: 'https://j0e.org/ueber-j0e-org/#kontakt' },
+      ],
+      icons: [
+        { title: 'mdi-facebook', href: 'https://www.facebook.com/j0e.org' },
+        { title: 'mdi-twitter', href: 'https://twitter.com/j0e_org' },
+        { title: 'mdi-instagram', href: 'https://www.instagram.com/j0eorg/' },
+      ],
+    }
+  },
+}
 </script>
 
 <style>

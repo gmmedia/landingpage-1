@@ -4,20 +4,18 @@
       <v-row justify="center">
         <v-col cols="xl-8">
           <v-container class="hero">
-            <v-row>
-              <v-col>
-                <h1>DIVI</h1>
-                <p>Das beliebteste WordPress-Thema der Welt und der ultimative WordPress Page Builder</p>
+            <v-row justify="center">
+              <v-col cols="12" xl="5" lg="5" md="5" align-self="center">
+                <h1 class="font-weight-black primary--text float-left float-md-none mr-5 mr-md-0">DIVI</h1>
+                <p>Das beliebteste WordPress Theme der Welt und der ultimative WordPress Page Builder</p>
               </v-col>
-              <v-col>
-                <video id="video1" class="card card-full-bleed current-item" width="600" autoplay="" loop="" muted="" playsinline="">
+              <v-col cols="12" xl="7" lg="7" md="7" align-self="center">
+                <video id="video1" class="card card-full-bleed current-item" width="100%" autoplay="" loop="" muted="" playsinline="">
                   <source data-src="https://res.cloudinary.com/j0e/video/upload/v1584557707/build_i9ixup.mp4" video-src="https://res.cloudinary.com/j0e/video/upload/v1584557707/build_i9ixup.mp4" type="video/mp4" src="https://res.cloudinary.com/j0e/video/upload/v1584557707/build_i9ixup.mp4">
                 </video>
               </v-col>
             </v-row>
-            <div class="my-2">
-              <v-btn x-large block color="primary">Extra large Button</v-btn>
-            </div>
+            <ctabuttonComp />
           </v-container>
 
           <p>Geile Sache von Joe.</p>
@@ -43,18 +41,21 @@
 </template>
 
 <script>
-export default {
+import ctabuttonComp from "~/components/ctabuttonComp"
 
-}
+export default {
+  components: {
+    ctabuttonComp
+  },  
+};
 </script>
 
 <style>
   .hero h1 {
-    font-size: 150px;
+    font-size: 10vw;
     font-weight: 900;
     line-height: 1.2em;
     margin-bottom: .2em;
-    color: #8f42ec;
   }
   .hero p {
     font-size: 34px;
